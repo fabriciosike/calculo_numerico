@@ -18,14 +18,13 @@ double funcao (double x){
 // METODO DAS CORDAS
 double cordas(double a, double b, double e1, double e2){
 	double erro, f_a, f_b, c, f_c; //VARIAVEIS PARA RAIZ, FUNCAO PARA CADA VALOR E ERRO
-	int cont = 0; //VARIAVEL PARA CONTADOR DE INTERA«’ES
+	int cont = 0; //VARIAVEL PARA CONTADOR DE INTERA√á√ïES
 	
 	f_a=funcao(a); //CALCULANDO O VALOR DA FUNCAO PARA O INICIO DA FAIXA
     f_b=funcao(b); //CALCULANDO O VALOR DA FUNCAO PARA O FIM DA FAIXA
     c=(a*f_b - b*f_a)/(f_b-f_a); //CALCULANDO VALOR DA RAIZ
     f_c=funcao(c); //CALCULANDO O VALOR DA FUNCAO PARA A RAIZ
     erro=fabs(b-a); // CALCULANDO ERRO 
-    cont++; //INCREMENTANDO CONTADOR
     
 	while(erro>e1 || fabs(f_c)>e2){ //LOOPING COM VERIFICACAO DAS CONDICOES DE PARADA
 		cont++; //INCREMENTANDO CONTADOR
@@ -40,7 +39,7 @@ double cordas(double a, double b, double e1, double e2){
     
 	cout<<"\nRaiz: "<<c<<endl; //IMPRIME A RAIZ MAIS PROXIMA
 	cout<<"\nErro: "<<error<<endl; // IMPRIME O ERRO
-	cout<<"\nNumero de iteracoes: "<<cont<<endl; // IMPRIME O NUMERO DE INTERA«’ES
+	cout<<"\nNumero de iteracoes: "<<cont<<endl; // IMPRIME O NUMERO DE INTERA√á√ïES
 	
 	return c;
 }
@@ -58,7 +57,7 @@ int main(){
 	cout<<"\nInforme o valor de epsilon 2:"<<endl;
 	cin>>e2; //PEGA O VALOR DO EPSILON 2
 
-    if(a==b){ //VERIFICA SE EXISTE REALMENTE UMA FAIXA DE VALORES, E N√O UM UNICO VALOR
+    if(a==b){ //VERIFICA SE EXISTE REALMENTE UMA FAIXA DE VALORES, E N√ÉO UM UNICO VALOR
         cout<<"\nOs valores de 'a' e 'b' sao iguais. Digite um novo valor para o fim do intervalo 'b':"<<endl;
         cin>>b;
     }else{
